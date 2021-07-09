@@ -1,0 +1,8 @@
+{
+  "name": "fem-n-stats-preview",
+  "version": "1.0.0",
+  "description": "solution to the frontend mentor's challenge, developed with html and sass",
+  "main": "index.js",
+  "author": "wanderley rabelo <padawandr@gmail.com>",
+  "license": "MIT"
+}
