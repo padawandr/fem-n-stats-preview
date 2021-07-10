@@ -1,3 +1,89 @@
+.card__name, .stats__text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
 
+.card__stat, .stats__title {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+}
+
+.main {
+  align-items: center;
+  background: #090b1a;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.stats {
+  background: #1b1938;
+  border-radius: 1rem;
+  display: grid;
+  justify-content: center;
+  margin: 9rem auto;
+  width: min(87%, 54rem);
+}
+.stats__image {
+  background: #aa5cdb;
+  border-radius: 1rem 1rem 0 0;
+  line-height: 0;
+}
+.stats__photo {
+  opacity: 75%;
+  mix-blend-mode: multiply;
+  width: 100%;
+}
+.stats__content {
+  padding: 4rem 3rem;
+  text-align: center;
+  max-width: 42rem;
+  margin: auto;
+}
+.stats__title--mod {
+  color: #aa5cdb;
+}
+.stats__text {
+  margin-top: 1.5rem;
+}
+.stats__list {
+  display: grid;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.card {
+  list-style: none;
+}
+.card:last-of-type {
+  text-transform: uppercase;
+}
+.card__stat {
+  display: block;
+  font-size: 2.4rem;
+}
+.card__name {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=style.css.map */
