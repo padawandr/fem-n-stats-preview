@@ -34,14 +34,13 @@
 .stats {
   background: #1b1938;
   border-radius: 1rem;
-  display: grid;
-  justify-content: center;
   margin: 9rem auto;
-  width: min(87%, 54rem);
+  width: min(87%, 42rem);
 }
 .stats__image {
   background: #aa5cdb;
   border-radius: 1rem 1rem 0 0;
+  display: block;
   line-height: 0;
 }
 .stats__photo {
@@ -52,7 +51,6 @@
 .stats__content {
   padding: 4rem 3rem;
   text-align: center;
-  max-width: 42rem;
   margin: auto;
 }
 .stats__title--mod {
@@ -84,6 +82,50 @@
   letter-spacing: 0.1rem;
   margin-top: 0.5rem;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 568px) {
+  .stats__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .stats__text {
+    margin-top: 2.5rem;
+  }
+  .stats__list {
+    margin-top: 5.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .stats {
+    display: flex;
+    width: min(87%, 111rem);
+  }
+  .stats__image {
+    border-radius: 0 1rem 1rem 0;
+    order: 1;
+    max-width: 54rem;
+    flex: 1;
+  }
+  .stats__photo {
+    object-fit: cover;
+    height: 100%;
+  }
+  .stats__content {
+    max-width: 57rem;
+    padding: 6.7rem;
+    text-align: left;
+    flex: 1;
+  }
+  .stats__title {
+    font-size: 3.6rem;
+  }
+  .stats__text {
+    max-width: 39rem;
+  }
+  .stats__list {
+    margin-top: 7rem;
+    max-width: 39rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
